@@ -63,6 +63,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="FFMPEG\Recorder.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -86,6 +87,14 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="FFMPEG\ffmpeg-4.3.1\presets\ffprobe.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FFMPEG\ffmpeg-4.3.1\presets\libvpx-1080p.ffpreset" />
+    <None Include="FFMPEG\ffmpeg-4.3.1\presets\libvpx-1080p50_60.ffpreset" />
+    <None Include="FFMPEG\ffmpeg-4.3.1\presets\libvpx-360p.ffpreset" />
+    <None Include="FFMPEG\ffmpeg-4.3.1\presets\libvpx-720p.ffpreset" />
+    <None Include="FFMPEG\ffmpeg-4.3.1\presets\libvpx-720p50_60.ffpreset" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -94,6 +103,52 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FFMPEG\ffmpeg-4.3.1\bin\ffmpeg.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="FFMPEG\ffmpeg-4.3.1\bin\ffplay.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="FFMPEG\ffmpeg-4.3.1\bin\ffprobe.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="FFMPEG\ffmpeg-4.3.1\doc\bootstrap.min.css" />
+    <Content Include="FFMPEG\ffmpeg-4.3.1\doc\default.css" />
+    <Content Include="FFMPEG\ffmpeg-4.3.1\doc\developer.html" />
+    <Content Include="FFMPEG\ffmpeg-4.3.1\doc\faq.html" />
+    <Content Include="FFMPEG\ffmpeg-4.3.1\doc\fate.html" />
+    <Content Include="FFMPEG\ffmpeg-4.3.1\doc\ffmpeg-all.html" />
+    <Content Include="FFMPEG\ffmpeg-4.3.1\doc\ffmpeg-bitstream-filters.html" />
+    <Content Include="FFMPEG\ffmpeg-4.3.1\doc\ffmpeg-codecs.html" />
+    <Content Include="FFMPEG\ffmpeg-4.3.1\doc\ffmpeg-devices.html" />
+    <Content Include="FFMPEG\ffmpeg-4.3.1\doc\ffmpeg-filters.html" />
+    <Content Include="FFMPEG\ffmpeg-4.3.1\doc\ffmpeg-formats.html" />
+    <Content Include="FFMPEG\ffmpeg-4.3.1\doc\ffmpeg-protocols.html" />
+    <Content Include="FFMPEG\ffmpeg-4.3.1\doc\ffmpeg-resampler.html" />
+    <Content Include="FFMPEG\ffmpeg-4.3.1\doc\ffmpeg-scaler.html" />
+    <Content Include="FFMPEG\ffmpeg-4.3.1\doc\ffmpeg-utils.html" />
+    <Content Include="FFMPEG\ffmpeg-4.3.1\doc\ffmpeg.html" />
+    <Content Include="FFMPEG\ffmpeg-4.3.1\doc\ffplay-all.html" />
+    <Content Include="FFMPEG\ffmpeg-4.3.1\doc\ffplay.html" />
+    <Content Include="FFMPEG\ffmpeg-4.3.1\doc\ffprobe-all.html" />
+    <Content Include="FFMPEG\ffmpeg-4.3.1\doc\ffprobe.html" />
+    <Content Include="FFMPEG\ffmpeg-4.3.1\doc\general.html" />
+    <Content Include="FFMPEG\ffmpeg-4.3.1\doc\git-howto.html" />
+    <Content Include="FFMPEG\ffmpeg-4.3.1\doc\libavcodec.html" />
+    <Content Include="FFMPEG\ffmpeg-4.3.1\doc\libavdevice.html" />
+    <Content Include="FFMPEG\ffmpeg-4.3.1\doc\libavfilter.html" />
+    <Content Include="FFMPEG\ffmpeg-4.3.1\doc\libavformat.html" />
+    <Content Include="FFMPEG\ffmpeg-4.3.1\doc\libavutil.html" />
+    <Content Include="FFMPEG\ffmpeg-4.3.1\doc\libswresample.html" />
+    <Content Include="FFMPEG\ffmpeg-4.3.1\doc\libswscale.html" />
+    <Content Include="FFMPEG\ffmpeg-4.3.1\doc\mailing-list-faq.html" />
+    <Content Include="FFMPEG\ffmpeg-4.3.1\doc\nut.html" />
+    <Content Include="FFMPEG\ffmpeg-4.3.1\doc\platform.html" />
+    <Content Include="FFMPEG\ffmpeg-4.3.1\doc\style.min.css" />
+    <Resource Include="FFMPEG\ffmpeg-4.3.1\LICENSE.txt" />
+    <Resource Include="FFMPEG\ffmpeg-4.3.1\README.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

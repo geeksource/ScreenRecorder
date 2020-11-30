@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ScreenRecorder.FFMPEG;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,21 @@ namespace ScreenRecorder
     /// </summary>
     public partial class MainWindow : Window
     {
+        private Recorder screenRecorder = null;
         public MainWindow()
         {
             InitializeComponent();
+            screenRecorder = new Recorder();
+        }
+
+        private void btnStart_Click(object sender, RoutedEventArgs e)
+        {
+            screenRecorder.Start();
+        }       
+
+        private void btnStop_Click(object sender, RoutedEventArgs e)
+        {
+            screenRecorder.Stop();
         }
     }
 }

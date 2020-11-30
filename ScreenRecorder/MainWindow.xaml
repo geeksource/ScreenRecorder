@@ -5,8 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ScreenRecorder"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
-    </Grid>
+        Title="MainWindow" Height="200" Width="525">
+    <StackPanel Orientation="Vertical">
+        <StackPanel Orientation="Horizontal" Margin="20">
+            <Label Content="Area"></Label>
+            <ComboBox Width="100" HorizontalAlignment="Center">
+                <ComboBoxItem Margin="10 0 0 0" IsSelected="True" >Full Screen</ComboBoxItem>
+                <ComboBoxItem Margin="10 0 0 0">Region</ComboBoxItem>                
+            </ComboBox>
+        </StackPanel>
+        <Separator/>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="20">
+            <Button Name="btnStart" Click="btnStart_Click" Content="Start" Width="100" Height="30" HorizontalAlignment="Center"></Button>
+            <Button Name="btnStop" Click="btnStop_Click" Margin="10 0 0 0" Content="Stop" Width="100" Height="30" HorizontalAlignment="Center"></Button>
+        </StackPanel>
+    </StackPanel>
 </Window>
