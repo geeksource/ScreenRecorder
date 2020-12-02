@@ -37,6 +37,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -147,6 +148,8 @@
     <Content Include="FFMPEG\ffmpeg-4.3.1\doc\nut.html" />
     <Content Include="FFMPEG\ffmpeg-4.3.1\doc\platform.html" />
     <Content Include="FFMPEG\ffmpeg-4.3.1\doc\style.min.css" />
+    <None Include="Icons\recordbtn.png" />
+    <Resource Include="Icons\screen.png" />
     <Resource Include="FFMPEG\ffmpeg-4.3.1\LICENSE.txt" />
     <Resource Include="FFMPEG\ffmpeg-4.3.1\README.txt" />
   </ItemGroup>

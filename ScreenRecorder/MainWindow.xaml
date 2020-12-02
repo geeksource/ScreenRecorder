@@ -5,11 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ScreenRecorder"
         mc:Ignorable="d"
-        Title="MainWindow" Height="200" Width="525">
+        Title="Screen Recorder" Height="190" Width="300" WindowStyle="ToolWindow">
     <StackPanel Orientation="Vertical">
+        <Label HorizontalAlignment="Center" FontWeight="Bold" FontSize="14" 
+               Content="{Binding Path=RecordingDuration, UpdateSourceTrigger=PropertyChanged, Mode=OneWay}"></Label>
         <StackPanel Orientation="Horizontal" Margin="20">
-            <Label Content="Area"></Label>
-            <ComboBox Width="100" HorizontalAlignment="Center">
+            <Image Source="Icons/screen.png" Width="20" Height="20"></Image>
+            <Label Margin="10 0 10 0" Content="Area" FontWeight="Bold"></Label>
+            <ComboBox Width="155" HorizontalAlignment="Center">
                 <ComboBoxItem Margin="10 0 0 0" IsSelected="True" >Full Screen</ComboBoxItem>
                 <ComboBoxItem Margin="10 0 0 0">Region</ComboBoxItem>                
             </ComboBox>
